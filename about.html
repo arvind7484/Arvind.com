@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Learn more about Arvind Kumar.21, his interests, and what inspires his work." />
+    <meta name="author" content="Arvind Kumar.21" />
+    <meta name="theme-color" content="#f5f4ef" />
+    <title>About — Arvind Kumar.21</title>
+    <style>
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+      a { color: inherit; }
+      .shell { width: min(1120px, calc(100% - 64px)); margin: 0 auto; }
+      .topbar { position: sticky; z-index: 5; top: 0; border-bottom: 1px solid rgb(25 34 29 / 8%); background: rgb(245 244 239 / 92%); backdrop-filter: blur(16px); }
+      .nav { display: flex; min-height: 76px; align-items: center; justify-content: space-between; }
+      .brand { display: inline-flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 720; letter-spacing: -0.04em; text-decoration: none; }
+      .brand-mark { display: grid; width: 31px; height: 31px; place-items: center; border-radius: 50%; background: var(--green); font-size: 12px; letter-spacing: -0.06em; }
+      .nav-links { display: flex; align-items: center; gap: 34px; }
+      .nav-links a { color: var(--muted); font-size: 13px; font-weight: 550; text-decoration: none; }
+      .nav-links .nav-cta { padding: 11px 16px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); }
+      .menu-toggle { display: none; width: 42px; height: 42px; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--ink); cursor: pointer; }
+      .about-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+      .habit-list { display: grid; gap: 13px; margin: 24px 0 0; padding: 0; list-style: none; }
+      .habit-list li { display: flex; align-items: flex-start; gap: 12px; color: var(--muted); font-size: 14px; line-height: 1.65; }
+      .habit-check { display: grid; width: 24px; height: 24px; flex: 0 0 24px; place-items: center; border-radius: 50%; background: var(--green); color: var(--green-dark); font-size: 13px; font-weight: 750; }
+      .motivation-panel { display: flex; min-height: 100%; flex-direction: column; justify-content: space-between; padding: clamp(26px, 5vw, 42px); border-radius: 17px; background: var(--green); }
+      .motivation-panel .eyebrow { margin: 0 0 22px; color: #526139; font-size: 11px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+      .motivation-panel h2 { max-width: 420px; margin: 0; font-family: var(--serif); font-size: clamp(34px, 4vw, 48px); font-weight: 400; letter-spacing: -.06em; line-height: 1.08; }
+      .motivation-panel p { margin: 25px 0 0; color: #48543a; font-size: 14px; line-height: 1.8; }
+      @media (max-width: 760px) {
+        .shell { width: min(100% - 40px, 560px); }
+        .nav { min-height: 68px; }
+        .menu-toggle { display: inline-flex; }
+        .nav-links { position: absolute; top: calc(100% + 1px); right: 0; left: 0; display: none; align-items: stretch; gap: 0; padding: 8px 20px 16px; border-bottom: 1px solid var(--line); background: var(--paper); }
+        .nav-links.is-open { display: flex; flex-direction: column; }
+        .nav-links a { padding: 14px 0; }
+        .nav-links .nav-cta { align-self: flex-start; margin-top: 7px; padding: 11px 16px; }
+        .about-layout { grid-template-columns: 1fr; }
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <nav class="nav shell" aria-label="Main navigation">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">AK</span><span>Arvind Kumar</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" /></svg>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a><a class="active" aria-current="page" href="about.html">About</a><a href="projects.html">Projects</a><a class="nav-cta" href="contact.html">Contact <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="page-hero shell">
+        <p class="eyebrow">A little about me</p>
+        <h1>Curious by nature.<br /><span>Learning as I go.</span></h1>
+        <p class="page-lead">I’m Arvind Kumar, a B.Tech Computer Science and Engineering student in my third year. I enjoy learning programming, exploring technology, and building projects to practise problem-solving.</p>
+      </section>
+      <section class="page-section shell" aria-label="Good habits and motivation">
+        <div class="about-layout">
+        <div class="content-panel">
+          <h2>Good things to practice</h2>
+          <p>Small, steady habits can make a meaningful difference. A few reminders I try to keep close:</p>
+          <ul class="habit-list">
+            <li><span class="habit-check" aria-hidden="true">✓</span><span>Stay curious and keep asking questions.</span></li>
+            <li><span class="habit-check" aria-hidden="true">✓</span><span>Learn something new, one step at a time.</span></li>
+            <li><span class="habit-check" aria-hidden="true">✓</span><span>Be kind, listen well, and help where you can.</span></li>
+            <li><span class="habit-check" aria-hidden="true">✓</span><span>Take care of your health and make time to rest.</span></li>
+            <li><span class="habit-check" aria-hidden="true">✓</span><span>Keep going, even when progress feels slow.</span></li>
+          </ul>
+        </div>
+        <div class="motivation-panel">
+          <div>
+            <p class="eyebrow">A little motivation</p>
+            <h2>You don’t have to be perfect to make progress.</h2>
+          </div>
+          <p>Start where you are. Do one small thing today that your future self will thank you for. Every step forward counts.</p>
+        </div>
+        </div>
+      </section>
+      <section class="page-section shell">
+        <div class="page-cards">
+          <article class="page-card"><span class="card-number">01</span><h2>Make</h2><p>Start with a small idea, build a first version, and improve it with practice. Creating something—even a simple project—turns curiosity into experience.</p></article>
+          <article class="page-card"><span class="card-number">02</span><h2>Learn</h2><p>Stay open to new skills and perspectives. Ask questions, practise regularly, and treat mistakes as useful feedback on the way forward.</p></article>
+          <article class="page-card"><span class="card-number">03</span><h2>Share</h2><p>Share what you make and what you learn. Explaining an idea can help others, invite helpful feedback, and make the lesson stick.</p></article>
+        </div>
+      </section>
+      <section class="page-section shell" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">Learning in progress</p><h2 id="skills-title">Skills &amp; interests</h2></div>
+          <p class="section-aside">Technologies I’m exploring and developing through coursework and practice.</p>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card"><span>01</span><h3>Python</h3><p>Programming</p></article>
+          <article class="skill-card"><span>02</span><h3>C</h3><p>Programming</p></article>
+          <article class="skill-card"><span>03</span><h3>C++</h3><p>Programming</p></article>
+          <article class="skill-card"><span>04</span><h3>Java</h3><p>Programming</p></article>
+          <article class="skill-card"><span>05</span><h3>HTML</h3><p>Web development</p></article>
+          <article class="skill-card"><span>06</span><h3>CSS</h3><p>Web development</p></article>
+          <article class="skill-card"><span>07</span><h3>JavaScript</h3><p>Web development</p></article>
+          <article class="skill-card"><span>08</span><h3>DBMS</h3><p>Computer science</p></article>
+        </div>
+      </section>
+      <section class="page-section shell" aria-labelledby="education-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">Academic journey</p><h2 id="education-title">Education</h2></div>
+        </div>
+        <div class="education-timeline">
+          <article class="education-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <p class="education-kicker">Currently studying · 3rd Year</p>
+            <h3>B.Tech in Computer Science and Engineering</h3>
+            <p>Building a foundation in computer science, programming, and software development.</p>
+          </article>
+        </div>
+      </section>
+      <nav class="page-navigation shell" aria-label="Page navigation">
+        <a class="page-nav-link" href="index.html"><span aria-hidden="true">←</span> Previous: Home</a>
+        <a class="page-nav-link" href="projects.html">Next: Projects <span aria-hidden="true">→</span></a>
+      </nav>
+    </main>
+    <footer class="site-footer"><div class="site-footer-inner shell"><p>© <span class="year"></span> Arvind Kumar</p><a href="index.html">Designed by Arvind Kumar ↑</a></div></footer>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      menuToggle.addEventListener("click", () => {
+        const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!isOpen));
+        menuToggle.setAttribute("aria-label", isOpen ? "Open navigation menu" : "Close navigation menu");
+        navLinks.classList.toggle("is-open", !isOpen);
+      });
+      navLinks.addEventListener("click", (event) => {
+        if (event.target.closest("a")) {
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.setAttribute("aria-label", "Open navigation menu");
+          navLinks.classList.remove("is-open");
+        }
+      });
+      document.querySelector(".year").textContent = String(new Date().getFullYear());
+      const revealItems = document.querySelectorAll(".page-hero, .about-layout > *, .page-cards > *, .section-heading, .skill-card, .education-item");
+      if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        revealItems.forEach((item) => {
+          item.classList.add("reveal-on-scroll");
+          revealObserver.observe(item);
+        });
+      }
+    </script>
+  </body>
+</html>
